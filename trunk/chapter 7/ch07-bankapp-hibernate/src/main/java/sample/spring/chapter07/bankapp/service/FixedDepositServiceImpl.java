@@ -27,6 +27,7 @@ public class FixedDepositServiceImpl implements FixedDepositService {
 	}
 
 	@Override
+	@Transactional
 	public FixedDepositDetails getFixedDeposit(int fixedDepositId) {
 		return myFixedDepositDao.getFixedDeposit(fixedDepositId);
 	}
